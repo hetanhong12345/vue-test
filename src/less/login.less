@@ -1,0 +1,90 @@
+@import "variables";
+
+.login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .body-warp {
+        background: @bg-main;
+        width: 100%;
+        overflow-x: hidden;
+        .content {
+            position: relative;
+            margin: auto;
+            width: 1200px;
+            height: 100%;
+            .text-warp {
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                text-shadow: 1px 2px 3px rgba(67, 8, 7, 0.8);
+                color: #FF9086;
+                font-size: 250px;
+                -webkit-mask-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.9)), color-stop(40%, rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+
+            }
+            .container {
+                position: relative;
+                z-index: 1;
+                width: 380px;
+                padding-bottom: 20px;
+                background: #fff;
+                box-shadow: 0 4px 1px 0 rgba(0, 0, 0, .2);
+                .title {
+                    height: 62px;
+                    border-bottom: 4px solid #b23e3d;
+                    font-size: 24px;
+                    color: @color-text;
+                }
+                .form-warp {
+                    margin-top: 20px;
+                    padding-right: 20px;
+                    .form-item {
+                        padding: 10px;
+                        .switch-type {
+                            color: @color-text;
+                            cursor: pointer;
+                            &:hover {
+                                color: @bg-main;
+
+                            }
+                        }
+                        .label {
+                            width: 80px;
+                            font-size: 16px;
+                            color: @color-text;
+                            margin-right: 20px;
+                            text-align: center;
+                        }
+                        .form-input {
+                            border: 1px solid #E16C62;
+                            border-radius: 2px;
+                            padding: 10px 15px;
+                        }
+                        .btn-login {
+                            font-size: 20px;
+                            color: #fff;
+                            height: 48px;
+                        }
+                        .form-code {
+                            text-align: center;
+                            letter-spacing: 2px;
+                            width: 110px;
+                            height: 48px;
+                            margin-left: 10px;
+                            font-size: 18px;
+                            border-radius: 2px;
+                            cursor: pointer;
+                            &.disabled {
+                                background: #aaa;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

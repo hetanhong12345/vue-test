@@ -1,0 +1,80 @@
+.bank-list {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+    .bank-body {
+        padding: 27px 48px 35px 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 940px;
+        background: #fff;
+        transform: translate(-50%, -50%);
+        .title {
+            font-size: 24px;
+            color: #363636;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .bank-wrap {
+            margin-top: 10px;
+            .bank-item {
+                display: inline-block;
+                float: left;
+                padding: 5px;
+                width: 148px;
+                height: 36px;
+                border: none;
+                margin: 5px 10px;
+                .bank-logo {
+                    width: 100%;
+                    height: 100%;
+                }
+                &.active {
+                    border: 1px solid #e16c62;
+                }
+                &.more {
+                    font-size: 20px;
+                    color: #E16C62;
+                    cursor: pointer;
+                }
+            }
+
+        }
+        .table-line {
+            &.table-title {
+                color: #FFF;
+                margin-top: 36px;
+            }
+            line-height: 40px;
+            text-align: center;
+            background: #E16C62;
+            font-size: 16px;
+            color: #333;
+            &.item {
+                background: #FFF2F2;
+            }
+            &.item:nth-of-type(2n+1) {
+                background: #FFE4E4;
+            }
+        }
+        .border-left {
+            border-left: 2px solid #fff;
+        }
+        .close-btn {
+            background: #E16C62;
+            color: #fff;
+            width: 200px;
+            margin: 30px auto 0 auto;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+}

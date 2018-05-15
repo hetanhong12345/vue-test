@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import "../../less/variables";
+@header-height:58px;
+.header {
+    width: 100%;
+    height: @header-height;
+    background: #eff3f5;
+    .content {
+        height: @header-height;
+        position: relative;
+        width: @warp-width;
+        margin: 0 auto;
+        .logo{
+            cursor: pointer;
+            height: @header-height;;
+            width: 142px;
+        }
+        @link-color:#F2625D;
+        .header-text{
+            margin-left: 20px;
+            font-size: 16px;
+            color: #555556;
+            line-height: @header-height;
+        }
+        .header-link{
+            color: @link-color;
+            border: 1px solid @link-color;
+            padding: 5px 20px;
+            border-radius: 3px;
+            height: 34px;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+    }
+}
