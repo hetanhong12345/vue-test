@@ -7,15 +7,15 @@ let HtmlWebpack = [];
 let entry = {};
 let files = require('./filenames') || []; // 填写需要编译的js文件名
 files.map(file => {
-    let entryJS = file.replace('.js', '');
-    entry[entryJS] = `./views/${file}`;
+    let entryJS = file.name.replace('.js', '');
+    entry[entryJS] = `./views/${file.name}`;
     let htmlConfig = {
-        title: '伴鱼绘本',
+        title: file.title || '伴鱼绘本',
         favicon: './images/logo.png',
         chunks: ['vue', entryJS],
         chunksSortMode: 'manual',
         inject: 'body',
-        filename: path.resolve(__dirname, `../html/${entryJS}.html`),
+        filename: path.resolve(__dirname, `./html/${entryJS}.html`),
         template: './index.ejs',
         minify: {//压缩HTML文件
             removeComments: true,    //移除HTML中的注释
