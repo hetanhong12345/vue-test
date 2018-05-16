@@ -2,7 +2,7 @@ import '../less/base.less';
 import 'flex.css';
 
 import Vue from 'vue';
-import Home from '../container/Home';
+import Home from '../containers/Home';
 
 new Vue({
     el: '#app',

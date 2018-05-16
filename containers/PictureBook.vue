@@ -6,7 +6,7 @@
 </template>
 
 <script>
-    import FishHeader from '../component/Header';
+    import FishHeader from '../components/Header';
 
     export default {
         name: 'picture-book',
