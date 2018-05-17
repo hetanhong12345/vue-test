@@ -16,7 +16,7 @@
             };
         },
         created() {
-            console.log(this.sb);
+            console.log(process.env);
         },
         components: {
             FishHeader

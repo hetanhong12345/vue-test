@@ -34,7 +34,7 @@ const config = {
     output: {
         path: path.resolve('../land'),
         filename: '[name].js',
-        chunkFilename: '[name].[id].chunk.js',
+        chunkFilename: '[id].chunk.js',
         publicPath: '/land/'
     },
     resolve: {
