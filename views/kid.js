@@ -5,6 +5,6 @@ import Vue from 'vue';
 import Kid from '../containers/Kid';
 
 new Vue({
-    el: '#app',
+    el: '#container',
     render: h => h(Kid)
 });
