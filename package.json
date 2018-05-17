@@ -5,10 +5,10 @@
   "author": "何坦宏 <hetanhong@mofanghr.com>",
   "private": true,
   "scripts": {
-      "dev": "webpack --env dev --watch",
-      "test": "webpack --env test  --progress --hide-modules",
-      "stage": "webpack --env stage  --progress --hide-modules",
-      "prod": "webpack --env prod  --progress --hide-modules"
+    "dev": "webpack --env dev --watch",
+    "test": "webpack --env test  --progress --hide-modules",
+    "stage": "webpack --env stage  --progress --hide-modules",
+    "prod": "webpack --env prod  --progress --hide-modules"
   },
   "stylelint": {},
   "engines": {
@@ -28,6 +28,7 @@
     "element-ui": "^2.2.1",
     "flex.css": "^1.1.7",
     "md5": "^2.2.1",
+    "mint-ui": "^2.2.13",
     "rimraf": "^2.6.2",
     "vue": "^2.5.13",
     "vue-router": "^3.0.1",
